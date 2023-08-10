@@ -1,36 +1,136 @@
-From f19a7e2d10ee5be30b5bb26d9255c6df6a87158a Mon Sep 17 00:00:00 2001
+From 0382e243d9709534948d082514af4ca73653309d Mon Sep 17 00:00:00 2001
 From: legendajar <harshsolanki9898@.com>
-Date: Wed, 9 Aug 2023 23:31:58 +0530
+Date: Thu, 10 Aug 2023 11:29:23 +0530
 Subject: [PATCH] Commit
 
 ---
- __pycache__/client3.cpython-310.pyc | Bin 0 -> 1043 bytes
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 __pycache__/client3.cpython-310.pyc
+ 0001-Commit.patch  | 36 ++++++++++++++++++++++++++++++++++++
+ client3.py         | 11 ++++++++---
+ multi_commit.patch | 36 ++++++++++++++++++++++++++++++++++++
+ 3 files changed, 80 insertions(+), 3 deletions(-)
+ create mode 100644 0001-Commit.patch
+ create mode 100644 multi_commit.patch
 
-diff --git a/__pycache__/client3.cpython-310.pyc b/__pycache__/client3.cpython-310.pyc
+diff --git a/0001-Commit.patch b/0001-Commit.patch
 new file mode 100644
-index 0000000000000000000000000000000000000000..8c3542d99f7624f943a11b3a1bf5a043efea68ec
-GIT binary patch
-literal 1043
-zcmYjQOK;RL5Vjp>lkJNF+lAgtB?OCD3POl##Y>`y8{#35u!^EIo^8`+ldbIqb=jVl
-zAF@4i=bv!Pl~eDC11H8wTj9v#Z=A{aoB5n#adD2|m<@lb%_bqgob&&{J@O2v`GH0e
-zMKdDnl}cLqOnQn*t~}{0uKaIAHdI3exCRiaaG&W9(1bbgr*uj;$)^W$9>{C~yuHQQ
-z67bmtpfh?*j_EO-ExT1-Y!bMLku7-%8gOY!x4674TXIFV;fiX)WoW?)wEMhGrj(L{
-zhqyZj0kok#Wv6><ioQd(??`9<1eudp<7>Ot4twkCS&_uqZeeV1<L<`Y^@9=U!>6fw
-z{PigPO$kYGo(~@p$N3zm>7i+o31(d-N7OpRR*CXfk;M_Ke17hG6L!QWbiyXyg!eh}
-z@W&6uYh9>O0wT^bVRu2~01A}&9A_gi!WLo&a?r8G2%%yd4~sOnqV$a|lKnEU#W31V
-zRp}3Pnn3NxX1_yAzn>Mc?f9jCFe)r)hFr@g#zu8$6T@n#T|M84cC!ENs@@iI+JnTJ
-zt$v~79q8^22T9j_fv&}Gy7#t{EQQ?OzcV~67k0pIBCXdIElgk*&@dL#WqdeYpxSLD
-z?)0<auxn}6!Ulq7Eejj3iI-pnR+|>0=!=SI6pJ`lr+8bOxGyWJ9VUa*h%>NVy{OGR
-z#+4z`d+XBOLeIE58RJwhRqvu`5T|(*jc>eh9a7@D5wR6Fu}8h@=C;6MtF<}=QD+=h
-zxiGGCRq{Pk<g%fWTrrSKBb{aG_8kp)dyJKh+L!*D_b=XlEa|JN4d(~v@c^Qz<S7bM
-z`j}$}N*a|uN~Vkq&awoUr5Hk9Hc*K{Y)h^oR%N47)aU@qsC3n#L+;0{w5)DJZvShB
-rlUCOqc{IQam%$U)N3(_|Y=tzW+~Z#8g>zxB%ml3kY||Fwe>nRGn&<>+
-
-literal 0
-HcmV?d00001
-
+index 0000000..80a8703
+--- /dev/null
++++ b/0001-Commit.patch
+@@ -0,0 +1,36 @@
++From f19a7e2d10ee5be30b5bb26d9255c6df6a87158a Mon Sep 17 00:00:00 2001
++From: legendajar <harshsolanki9898@.com>
++Date: Wed, 9 Aug 2023 23:31:58 +0530
++Subject: [PATCH] Commit
++
++---
++ __pycache__/client3.cpython-310.pyc | Bin 0 -> 1043 bytes
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ create mode 100644 __pycache__/client3.cpython-310.pyc
++
++diff --git a/__pycache__/client3.cpython-310.pyc b/__pycache__/client3.cpython-310.pyc
++new file mode 100644
++index 0000000000000000000000000000000000000000..8c3542d99f7624f943a11b3a1bf5a043efea68ec
++GIT binary patch
++literal 1043
++zcmYjQOK;RL5Vjp>lkJNF+lAgtB?OCD3POl##Y>`y8{#35u!^EIo^8`+ldbIqb=jVl
++zAF@4i=bv!Pl~eDC11H8wTj9v#Z=A{aoB5n#adD2|m<@lb%_bqgob&&{J@O2v`GH0e
++zMKdDnl}cLqOnQn*t~}{0uKaIAHdI3exCRiaaG&W9(1bbgr*uj;$)^W$9>{C~yuHQQ
++z67bmtpfh?*j_EO-ExT1-Y!bMLku7-%8gOY!x4674TXIFV;fiX)WoW?)wEMhGrj(L{
++zhqyZj0kok#Wv6><ioQd(??`9<1eudp<7>Ot4twkCS&_uqZeeV1<L<`Y^@9=U!>6fw
++z{PigPO$kYGo(~@p$N3zm>7i+o31(d-N7OpRR*CXfk;M_Ke17hG6L!QWbiyXyg!eh}
++z@W&6uYh9>O0wT^bVRu2~01A}&9A_gi!WLo&a?r8G2%%yd4~sOnqV$a|lKnEU#W31V
++zRp}3Pnn3NxX1_yAzn>Mc?f9jCFe)r)hFr@g#zu8$6T@n#T|M84cC!ENs@@iI+JnTJ
++zt$v~79q8^22T9j_fv&}Gy7#t{EQQ?OzcV~67k0pIBCXdIElgk*&@dL#WqdeYpxSLD
++z?)0<auxn}6!Ulq7Eejj3iI-pnR+|>0=!=SI6pJ`lr+8bOxGyWJ9VUa*h%>NVy{OGR
++z#+4z`d+XBOLeIE58RJwhRqvu`5T|(*jc>eh9a7@D5wR6Fu}8h@=C;6MtF<}=QD+=h
++zxiGGCRq{Pk<g%fWTrrSKBb{aG_8kp)dyJKh+L!*D_b=XlEa|JN4d(~v@c^Qz<S7bM
++z`j}$}N*a|uN~Vkq&awoUr5Hk9Hc*K{Y)h^oR%N47)aU@qsC3n#L+;0{w5)DJZvShB
++rlUCOqc{IQam%$U)N3(_|Y=tzW+~Z#8g>zxB%ml3kY||Fwe>nRGn&<>+
++
++literal 0
++HcmV?d00001
++
++-- 
++2.40.1.windows.1
++
+diff --git a/client3.py b/client3.py
+index 3fc09b7..5b6ead5 100644
+--- a/client3.py
++++ b/client3.py
+@@ -35,14 +35,17 @@ def getDataPoint(quote):
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+-    price = bid_price
++    price = (bid_price + ask_price) / 2
+     return stock, bid_price, ask_price, price
+ 
+ 
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
+-    return 1
++    if(price_b == 0):
++        # when price_b is 0 avoid throwing ZeroDivisionError
++        return
++    return price_a/price_b
+ 
+ 
+ # Main
+@@ -52,8 +55,10 @@ if __name__ == "__main__":
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+         """ ----------- Update to get the ratio --------------- """
++        prices = {}
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
++            prices[stock] = price
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-        print("Ratio %s" % getRatio(price, price))
++        print("Ratio %s" % getRatio(prices['ABC'], prices['DEF']))
+diff --git a/multi_commit.patch b/multi_commit.patch
+new file mode 100644
+index 0000000..80a8703
+--- /dev/null
++++ b/multi_commit.patch
+@@ -0,0 +1,36 @@
++From f19a7e2d10ee5be30b5bb26d9255c6df6a87158a Mon Sep 17 00:00:00 2001
++From: legendajar <harshsolanki9898@.com>
++Date: Wed, 9 Aug 2023 23:31:58 +0530
++Subject: [PATCH] Commit
++
++---
++ __pycache__/client3.cpython-310.pyc | Bin 0 -> 1043 bytes
++ 1 file changed, 0 insertions(+), 0 deletions(-)
++ create mode 100644 __pycache__/client3.cpython-310.pyc
++
++diff --git a/__pycache__/client3.cpython-310.pyc b/__pycache__/client3.cpython-310.pyc
++new file mode 100644
++index 0000000000000000000000000000000000000000..8c3542d99f7624f943a11b3a1bf5a043efea68ec
++GIT binary patch
++literal 1043
++zcmYjQOK;RL5Vjp>lkJNF+lAgtB?OCD3POl##Y>`y8{#35u!^EIo^8`+ldbIqb=jVl
++zAF@4i=bv!Pl~eDC11H8wTj9v#Z=A{aoB5n#adD2|m<@lb%_bqgob&&{J@O2v`GH0e
++zMKdDnl}cLqOnQn*t~}{0uKaIAHdI3exCRiaaG&W9(1bbgr*uj;$)^W$9>{C~yuHQQ
++z67bmtpfh?*j_EO-ExT1-Y!bMLku7-%8gOY!x4674TXIFV;fiX)WoW?)wEMhGrj(L{
++zhqyZj0kok#Wv6><ioQd(??`9<1eudp<7>Ot4twkCS&_uqZeeV1<L<`Y^@9=U!>6fw
++z{PigPO$kYGo(~@p$N3zm>7i+o31(d-N7OpRR*CXfk;M_Ke17hG6L!QWbiyXyg!eh}
++z@W&6uYh9>O0wT^bVRu2~01A}&9A_gi!WLo&a?r8G2%%yd4~sOnqV$a|lKnEU#W31V
++zRp}3Pnn3NxX1_yAzn>Mc?f9jCFe)r)hFr@g#zu8$6T@n#T|M84cC!ENs@@iI+JnTJ
++zt$v~79q8^22T9j_fv&}Gy7#t{EQQ?OzcV~67k0pIBCXdIElgk*&@dL#WqdeYpxSLD
++z?)0<auxn}6!Ulq7Eejj3iI-pnR+|>0=!=SI6pJ`lr+8bOxGyWJ9VUa*h%>NVy{OGR
++z#+4z`d+XBOLeIE58RJwhRqvu`5T|(*jc>eh9a7@D5wR6Fu}8h@=C;6MtF<}=QD+=h
++zxiGGCRq{Pk<g%fWTrrSKBb{aG_8kp)dyJKh+L!*D_b=XlEa|JN4d(~v@c^Qz<S7bM
++z`j}$}N*a|uN~Vkq&awoUr5Hk9Hc*K{Y)h^oR%N47)aU@qsC3n#L+;0{w5)DJZvShB
++rlUCOqc{IQam%$U)N3(_|Y=tzW+~Z#8g>zxB%ml3kY||Fwe>nRGn&<>+
++
++literal 0
++HcmV?d00001
++
++-- 
++2.40.1.windows.1
++
 -- 
 2.40.1.windows.1
 
