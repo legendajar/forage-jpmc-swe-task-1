@@ -1,0 +1,71 @@
+From 8ef579faf58ed2ddcab5e311c3162b668afd83c3 Mon Sep 17 00:00:00 2001
+From: legendajar <harshsolanki9898@gmail.com>
+Date: Thu, 28 Dec 2023 15:18:13 +0530
+Subject: [PATCH] task1
+
+---
+ __pycache__/client3.cpython-312.pyc | Bin 0 -> 1688 bytes
+ client_test.py                      |   6 +++++-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 __pycache__/client3.cpython-312.pyc
+
+diff --git a/__pycache__/client3.cpython-312.pyc b/__pycache__/client3.cpython-312.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..aef5976b30809285856f8245249189476a299e93
+GIT binary patch
+literal 1688
+zcmah}O>7fK6rS<^*p7d|i5*DdsuLti4CDt8CAC6PAWlUktb|h3tkPN=?<A~oyk>V(
+z6xWfgst2RCl2H!{s!%EFAyqCQRVwO<wuc^iiLnsw&;wO3<<yY$lvCfV?UpJ?9ckaZ
+z`R2WE-n{o_e+~rN5R5;_r!)lG?|ji3fu^!`8zZ!gG^F7yQW`T>u(Nh4g62|0O;99F
+z{0J$sCV_NQk0xL4L&*Hbg{T+4HY%+F3m>g{4840BA;kx~D6_Y*_q?P+ru+GIL(jal
+z6Qg40<((+-;*4u2zSe|VakS=4@BiB>AurOA(oRDVeGH=SfKz1J(c+jE0ShY;rBm5M
+z_t1749syFY*{iu}_;ajzXauB}c7kl9dqDbbdRyKYeR4=_So^`pP206V7x=>*<nvnd
+zHU;_LEP~HhB3i_YIJWC4zd*9kd&#!*@xj5Ykyf*p49kuW4-F3uURj{#;wfD_`N5L@
+z7t|u%tOs{O5H}Lw+sc7hMqX5eYV$Lfu>Fr6U@nenf)h;>UvmA&LVSURP;?cA0{4^(
+zKHwCKm?K4TR(uP^<iZIuVH(;(ni4geCH5ssa+GRRBk!x(1!@u7AagWFP1ObqqN%o;
+zH}srMm}J>T`Z9CdMm{y8YfQ?UdYU%Ys&)A(Pgo2yX*O%9c1&W@l?B75CciE7f<vld
+z?*-e2YC>v}C4nG(Y{#|u^tfTFbCg^Fqv<y%$T`EDQ*+a^4%(l|&!_vXtF+&S?fxUv
+z>8wt3_OXHdBJ<BtdkkWo;IW!P&dJFyfGD9S;z->esvNkMEG2&39jVZjv(?U5Ze6W*
+z4%T)LmCn8hs|Pw)x~hSFx74ctKq*o8?XJXDrdFkOU;nz;zXiM~{d~i7-6<-6M@~_(
+zhMi}L7hOeE#Jm_#0HLstyg_XO`PB_#%n~OnDV3->t*Ortld~niMllz2H}_l0jK%i|
+zG5H^ZdEnaTIg=TN<w5u?-V%)~yMvY94~tJc!Md-#a^l*lb+Oyr<#?r1^QxXpr3&sz
+zUL%bZyhOE0A5<w`kPj0`Z@l0++=wT>jbjCma|+pSF=6!d877P+#$#Pf%veT_$tJ{Z
+z%(LKvna%1m115#`w`?Xi)=ZjwJ8^!B;iOX+CsO7~rE=;#O{JKqLz6HGIOZtBDJDVt
+zXclv~Slqy3<S85jT`;fOOf;#gG1=)Zi^)!YER+9QonA8`&&c$1!TZZ;Q)r102l(xs
+z#BF;<=HU@!>Feep!1(L3{sgfhV2rm8BJ6*R0*_H-Lq^`iB?%_UQ^K3F8xL%TW!$q7
+zMxwu5cp!BB76@J6zk)yO`}n<0)Fz$5Wn2&SRKm;M*SlB7zewIlK8hZ#MvvY({_V)!
+zk^6!B@=t;913&Jn9h;~{Cm%&GR-+ed(RXU0sj~dUbEY2ZD9iOo&n6PQ8ZIY(IdbwI
+ztsNPw`UlF1%4;k7YNQ_REss}@UpvSAq3;%c&>u`H52n@i_L+zN^oE<eJ!?bWU^#PR
+k_}2L9@h{KadG+4@yC-Wsqt)Q(L(l1F5gz7-gqrQ}HxeMCng9R*
+
+literal 0
+HcmV?d00001
+
+diff --git a/client_test.py b/client_test.py
+index af2bf26..968f237 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -7,7 +7,10 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
++    
+     """ ------------ Add the assertion below ------------ """
++    for i in quotes:
++      self.assertEqual(getDataPoint(i), (i['stock'], i['top_bid']['price'], i['top_ask']['price'], (i['top_bid']['price']+i['top_ask']['price'])/2))
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+@@ -15,7 +18,8 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
+-
++    for i in quotes:
++      self.assertEqual(getDataPoint(i), (i['stock'], i['top_bid']['price'], i['top_ask']['price'], (i['top_bid']['price']+i['top_ask']['price'])/2))
+ 
+   """ ------------ Add more unit tests ------------ """
+ 
+-- 
+2.42.0.windows.2
+
